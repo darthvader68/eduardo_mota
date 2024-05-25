@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+.header_container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 36px;
+    font-weight: 900;
+    color: #facc15;
+    display: flex;
+} 
+.logo span {
+    color: #000;
+}
+.header_nav_container {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.header_nav_container a {
+    font-size: 16px;
+    color: #475569;
+    font-weight: 900;
+}
+.header_nav_container .login_button {
+    color: #facc15;
+}
+.header_nav_container .tryit_button {
+    color: #fff;
+    width: 124px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #facc15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_hero_wrapper {
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    justify-content: center;
+}
+.section_hero_container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+.section_hero_leftside .title {
+    font-size: 72px;
+    color: #713f12;
+    font-weight: 700;
+}
+.section_hero_leftside .subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #a16207;
+    line-height: 134.69%;
+}
+.send_email_container {
+    width: 100%;
+    max-width: 484px;
+    height: 68px;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-top: 34px;
+}
+.send_email_container input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    margin-left: 12px;
+    flex: 1;
+}
+.send_email_container button {
+    background-color: #facc15;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 50%;
+    border-radius: 22px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.section_hero_leftside .survey {
+    font-size: 36px;
+    font-weight: 700;
+    color: #334155;
+    margin-top: 14px;
+}

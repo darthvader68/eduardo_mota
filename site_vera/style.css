@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato", serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px 5%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo span {
+    font-weight: 700; /*grossura da linha*/
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+section {
+    overflow-x: hidden; /*esconde a barra de rolagem no eixo x*/
+}
+section img{
+    width: 100%;
+    height: 300px;
+}
+.promotion_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%; 
+}
+.promotion_header--title {
+    font-weight: 700;
+    color: #161616;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+main {
+    display: flex; /*deixa um item ao lado do outro*/
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /*dá um espaçamento entre os itens*/
+}
+.product img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; /*nao deixa a imagem distorcida*/
+    border-radius: 10px;
+}
+.product span {
+    font-weight: 700;
+}
+.price {
+    color: #5ca720;
+}
+footer {
+    background-color: #eee;
+}
+.footer_top {
+    display: flex; /*coloca uma do lado da outra*/
+    justify-content: space-between; /*afasta os intens entre eles*/
+    border-top: 2px solid #ddd;
+    padding: 20px 5%;
+}
+.footer_top_left {
+    display: flex;
+    flex-direction: column; /*direciona os itens em coluna*/
+    gap: 10px; /*afasta um elemento do outro*/
+}
+.footer_top_left  a {
+    font-weight: 700;
+    color: #161616;
+    text-decoration: none;
+}
+.footer_top_right {
+    display: flex; /*coloca uma do lado da outra*/
+    flex-direction: column;
+    justify-content: center; /*alinha o conteudo no centro*/
+    gap: 10px;
+}
+.footer_top_right span {
+    font-weight: 700;
+    color: #161616;
+}
+.footer_newsletter {
+    display: flex;
+    align-items: center;
+}
+.footer_input {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    outline: none; /*nao quer a linha na borda*/
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+.footer_button {
+    width: 90px;
+    height: 40px;
+    border: 1px solid #eee;
+    background-color: #5ca720;
+    color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border: 2px solid #ddd;
+}
+.footer_bottom_left, .footer_bottom_right {
+    display: flex;
+    gap: 10px;
+}
+.footer_img {
+    height: 20px;
+}

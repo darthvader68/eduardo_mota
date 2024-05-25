@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+}
+
+main {
+    display: flex;
+    /*deixa um do lado do outro*/
+    height: 100vh;
+    /*vh - viewport, do topo ate embaixo sem barra de rolagem*/
+    overflow: hidden;
+}
+
+.left_side {
+    background: radial-gradient(99.46% 89.69% at 117.29% 112.19%, #F8C35B 0%, #FDE591 100%);
+    width: 550px;
+    padding-left: 150px;
+    padding-top: 29px;
+}
+
+.logo span {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3A3934;
+    position: relative;
+}
+
+.logo span::before {
+    /*before - cria um elemento antes do intem (no caso: span)*/
+    content: '';
+    width: 60px; 
+    height: 60px;
+    border: 2px solid #3A3934;
+    opacity: 20%;
+    position: absolute; /*fica em qualquer lugar na pagina*/
+    left: -17px;
+    top: -6px;
+}
+.abajur_images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.images {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.images .L1 {
+    width: 270px;
+}
+.images .L2 {
+    width: 226px;
+    position: absolute; /*podera sre posicionada em qualquer lugar*/
+    right: -180px;
+}
+.right_side {
+    background-image: url(img/bg_element.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 44px;
+    width: 100%;
+    flex: 1;
+}
+header nav {
+    display: flex;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #3A3934;
+}
+.social_icons {
+    margin-left: 41px;
+    display: flex;
+    gap: 12px;
+}
+.content {
+    margin-top: 80px;
+    width: 410px;
+}
+.content h3 {
+    font-size: 15px;
+    color: #3A3934;
+    opacity: 50%;
+    font-weight: 400;
+}
+.content h1 {
+    font-weight: 700;
+    font-size: 85px;
+    color: #3A3934;
+}
+.content p {
+   font-weight: 400; 
+   font-size: 13px;
+   color: #3A3934;
+   margin-top: 45px;
+}
+.content button {
+    margin-top: 50px;
+    color: #fff;
+    background-color: #3A3934;
+    width: 140px;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    font-size: 18px;
+    box-shadow: 0px 10px 30px 0px #00000033;
+}
+.advantage_section {
+    width: 100%;
+    height: 100%;
+    border-image: url(img/bg_text.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 49px;
+}
+.advantage {
+    display: flex;
+    gap: 6px;
+}
+.advantage_text {
+    display: flex;
+    flex-direction: column;
+}
+.advantage_text .title {
+    color: #3A3934;
+    font-size: 16px;
+    font-weight: 700;
+}
+.advantage_text .description {
+    color: #3A3934;
+    opacity: 0.6;
+    font-size: 14px;
+}
